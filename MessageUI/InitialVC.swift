@@ -170,7 +170,7 @@ class InitialVC: UIViewController {
             print("price - \(price)")
             
             let productName = object.objectForKey("productName")!.objectForKey("genesis")! as? String
-            let productImage = object.objectForKey("productName")!.objectForKey("productImage0")! as? PFFile
+            let productImage = object.objectForKey("productImage")!.objectForKey("productImage")! as? PFFile
             
             let productImageView = UIImageView()
             

@@ -128,7 +128,6 @@ class StructuredMessage: NSObject, JSQMessageMediaData {
         button.layer.borderColor = UIColor(red:37.0/255.0,green:199.0/255.0,blue:255.0/255.0,alpha: 1.0).CGColor
         button.titleLabel!.font =  UIFont(name: "HelveticaNeue", size: 0.0175*UIScreen.mainScreen().bounds.size.height)
 //        button.titleLabel!.font =  UIFont(name: "HelveticaNeue", size: 12)
-
         button.translatesAutoresizingMaskIntoConstraints = false
         messageView.addSubview(button)
         button.bottomAnchor.constraintEqualToAnchor(messageView.bottomAnchor, constant: -17).active = true
@@ -183,7 +182,6 @@ class StructuredMessage: NSObject, JSQMessageMediaData {
     //        }
     func RBSquareImageTo(image: UIImage, width: CGFloat, height: CGFloat) -> UIImage {
         return cropToBounds(RBSquareImage(image), width: width, height: height)
-        
     }
     
     func RBSquareImage(image: UIImage) -> UIImage {

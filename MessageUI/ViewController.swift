@@ -167,7 +167,7 @@ class ViewController: JSQMessagesViewController,SKTConversationDelegate,UIImageP
             print("price - \(price)")
             
             let productName = object.objectForKey("productName")!.objectForKey("genesis")! as? String
-            let productImage = object.objectForKey("productName")!.objectForKey("productImage0")! as? PFFile
+            let productImage = object.objectForKey("productImage")!.objectForKey("productImage")! as? PFFile
             
             let productImageView = UIImageView()
             
@@ -179,7 +179,6 @@ class ViewController: JSQMessagesViewController,SKTConversationDelegate,UIImageP
             var combinedAttribute = ""
             for (_,value) in attributes{
                 combinedAttribute += (value as! String)
-                
             }
             
             productImageView.kf_setImageWithURL(NSURL(string: (productImage?.url)!)!,
